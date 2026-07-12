@@ -1,0 +1,36 @@
+<script>
+    if (localStorage.getItem("role") !== "admin") {
+        window.location.href = "login.html";
+    }
+</script>
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Admin Paneli</h1>
+    </header>
+
+    <section>
+        <h2>Yeni Tələbə Əlavə Et</h2>
+        <form id="addStudentForm">
+            <input type="text" id="studentName" placeholder="Tələbənin adı və soyadı" required>
+            <input type="text" id="username" placeholder="İstifadəçi adı" required>
+            <input type="password" id="password" placeholder="Parol" required>
+            <button type="submit">Tələbəni qeydiyyatdan keçir</button>
+        </form>
+    </section>
+
+
+<footer style="text-align: center; margin-top: 40px; padding: 20px; color: #7f8c8d; font-size: 14px;">
+        <p>Hazırladı: Xədicə Abbaszadə</p>
+        <p>&copy; 2026 Bütün hüquqlar qorunur.</p>
+    </footer>
+
+</body>
+</html>
